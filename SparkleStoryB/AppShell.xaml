@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="SparkleStory.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:SparkleStory"
+    xmlns:control="clr-namespace:SparkleStory.Controls"
+    
+    Title="SparkleStory">
+    <!-- Define Flyout Items for Character Customization -->
+    
+    <FlyoutItem Title="Character">
+        <ShellContent
+            Title="Character"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+    </FlyoutItem>
+    <MenuItem Text="Skin" Command="{Binding CustomizeCommand}" CommandParameter="SkinColor" />
+    <MenuItem Text="Hair" Command="{Binding CustomizeCommand}" CommandParameter="Hair" />
+    <MenuItem Text="Face" Command="{Binding CustomizeCommand}" CommandParameter="ActualFace" />
+    <MenuItem Text="Hat" Command="{Binding CustomizeCommand}" CommandParameter="Hat" />
+
+    <MenuItem Text="Top" Command="{Binding CustomizeCommand}" CommandParameter="Top" />
+    <MenuItem Text="Bottom" Command="{Binding CustomizeCommand}" CommandParameter="Bottom" />
+    <MenuItem Text="Shoe" Command="{Binding CustomizeCommand}" CommandParameter="Shoe" />
+    <MenuItem Text="Cape" Command="{Binding CustomizeCommand}" CommandParameter="Cape" />
+
+    <MenuItem Text="Glove" Command="{Binding CustomizeCommand}" CommandParameter="Glove" />
+    <MenuItem Text="Face Accessory" Command="{Binding CustomizeCommand}" CommandParameter="FaceAccessory" />
+    <MenuItem Text="Eye" Command="{Binding CustomizeCommand}" CommandParameter="Eye" />
+    <MenuItem Text="Ear" Command="{Binding CustomizeCommand}" CommandParameter="Ear" />
+    <MenuItem Text="Weapon" Command="{Binding CustomizeCommand}" CommandParameter="Weapon" />
+
+    <FlyoutItem Title="Utilities" >
+        <ShellContent Title="Save" />
+        <ShellContent Title="Load" />
+        <ShellContent Title="Export" />
+    </FlyoutItem>
+    <!-- Define Footer Items for Save/Load Options 
+    <FlyoutItem Title="Save/Load" Icon="save_load_icon.png">
+        <ShellContent Title="Save/Load Options" ContentTemplate="{DataTemplate control:SaveLoadFooter}" />
+    </FlyoutItem>-->
+    
+    
+
+</Shell>

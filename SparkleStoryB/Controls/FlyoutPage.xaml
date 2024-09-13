@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SparkleStory.Controls.FlyoutPage"
+             Title="FlyoutPage">
+    <Grid>
+        <!-- Define rows with a ratio to push the bottom items -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Top items -->
+            <RowDefinition Height="*"/>
+            <!-- Stretchable space -->
+            <RowDefinition Height="Auto"/>
+            <!-- Bottom items -->
+        </Grid.RowDefinitions>
+
+        <!-- Character options at the top -->
+        <StackLayout Grid.Row="0" Padding="10">
+            <Label Text="Character Customization" FontSize="Large" Margin="0,0,0,10"/>
+            
+            
+            
+        </StackLayout>
+
+        <!-- Spacer to push bottom items to the bottom -->
+        <BoxView Grid.Row="1"/>
+
+        <!-- Save/Load/Export options at the bottom -->
+        <StackLayout Grid.Row="2">
+            <Button Text="Save" Command="{Binding SaveCommand}"/>
+            <Button Text="Load" Command="{Binding LoadCommand}"/>
+            <Button Text="Export" Command="{Binding ExportCommand}"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>

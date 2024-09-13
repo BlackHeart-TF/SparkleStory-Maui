@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SparkleStory.Controls.CharacterCustomizationList"
+             Title="CharacterCustomizationList">
+    <VerticalStackLayout>
+        <Label 
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Button Text="Skin Color" Command="{Binding CustomizeCommand}" CommandParameter="SkinColor"/>
+        <Button Text="Hair" Command="{Binding CustomizeCommand}" CommandParameter="Hair"/>
+        <Button Text="Face" Command="{Binding CustomizeCommand}" CommandParameter="ActualFace"/>
+        <Button Text="Hat" Command="{Binding CustomizeCommand}" CommandParameter="Hat"/>
+
+        <Button Text="Top" Command="{Binding CustomizeCommand}" CommandParameter="Top"/>
+        <Button Text="Bottom" Command="{Binding CustomizeCommand}" CommandParameter="Bottom"/>
+        <Button Text="Shoe" Command="{Binding CustomizeCommand}" CommandParameter="Shoe"/>
+        <Button Text="Cape" Command="{Binding CustomizeCommand}" CommandParameter="Cape"/>
+
+        <Button Text="Glove" Command="{Binding CustomizeCommand}" CommandParameter="Glove"/>
+        <Button Text="Face Accessory" Command="{Binding CustomizeCommand}" CommandParameter="FaceAccessory"/>
+        <Button Text="Eye" Command="{Binding CustomizeCommand}" CommandParameter="Eye"/>
+        <Button Text="Ear" Command="{Binding CustomizeCommand}" CommandParameter="Ear"/>
+        <Button Text="Weapon" Command="{Binding CustomizeCommand}" CommandParameter="Weapon"/>
+    </VerticalStackLayout>
+</ContentPage>
