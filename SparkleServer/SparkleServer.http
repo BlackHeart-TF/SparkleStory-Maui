@@ -1,0 +1,6 @@
+@SparkleServer_HostAddress = http://localhost:5241
+
+GET {{SparkleServer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

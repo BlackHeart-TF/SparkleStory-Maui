@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34916.146
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SparkleStory", "SparkleStoryB\SparkleStory.csproj", "{05D06AC9-B19A-4CA5-93FA-8B851BD4D39F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SparkleStory", "SparkleStoryB\SparkleStory.csproj", "{05D06AC9-B19A-4CA5-93FA-8B851BD4D39F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WZDumper", "WZDumper\WZDumper.csproj", "{C4A4C8E5-5D0A-41DF-BD95-A4A9DAF67E45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SparkleServer", "SerkleServer\SparkleServer.csproj", "{9085B8CF-63BE-4152-8F57-AAFA250AC2C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,6 +21,14 @@ Global
 		{05D06AC9-B19A-4CA5-93FA-8B851BD4D39F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05D06AC9-B19A-4CA5-93FA-8B851BD4D39F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{05D06AC9-B19A-4CA5-93FA-8B851BD4D39F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C4A4C8E5-5D0A-41DF-BD95-A4A9DAF67E45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4A4C8E5-5D0A-41DF-BD95-A4A9DAF67E45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4A4C8E5-5D0A-41DF-BD95-A4A9DAF67E45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4A4C8E5-5D0A-41DF-BD95-A4A9DAF67E45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9085B8CF-63BE-4152-8F57-AAFA250AC2C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9085B8CF-63BE-4152-8F57-AAFA250AC2C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9085B8CF-63BE-4152-8F57-AAFA250AC2C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9085B8CF-63BE-4152-8F57-AAFA250AC2C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
